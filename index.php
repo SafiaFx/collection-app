@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +17,9 @@
 
         <div class="icons magnify">
 
-            <a href="https://github.com/SafiaFx">
+            <a href="https:artist-page">
                 <div class="icon link-1">
-                    <i class="fa fa-github-square" aria-hidden="true"></i></div>
+                    <i class="icon-link-1"></i></div>
             </a>
 
             <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
@@ -33,11 +32,11 @@
             </a>
         </div>
 
-<header class="header">
-        <div class="filters">Poetry</div>
-        <div class="filters">Music</div>
-        <div class="filters">Other</div>
-</header>
+        <header class="header">
+            <div class="filters">Poetry</div>
+            <div class="filters">Music</div>
+            <div class="filters">Other</div>
+        </header>
 
 <?php
 
@@ -54,15 +53,16 @@ $result = $query->fetchALL();
 //foreach($result
 echo '<div class="contain">';
 
-foreach($result as $poem)
-{
+foreach ($result as $poem) {
     echo '<div class="container">' .
-       '<a href=details.php?id=' . $poem['id'] . '>'. '<div class="image-description-container">' .
+        '<a href=details.php?id=' . $poem['id'] . '>' . '<div class="image-description-container">' .
 
         '<img class="images" src="' . $poem['image'] . '">' .
         '<div class="description">' . '<div class="name">' . $poem['name'] . '</div>' .
         '<div class="type">' . $poem['type'] . '<br>' . '</div>' .
         '<div class="about">' . $poem['about'] . '<br>' . '</div>' .
         '<div class="date">' . $poem['date'] . '<br><hr>' . '</div>' .
-        '</div>' . '</div>' . '</div>'.'</a>';
+        '</div>' .
+        '</div>' .
+        '</div>' . '</a>';
 };

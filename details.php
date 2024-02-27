@@ -13,19 +13,19 @@
 <body class="body">
 
 <header class="header">
-            <div class="icons magnify">
-                <a href="index.php">
-                    <div class="icon-link-1"><h1>Home</h1>
-                        <box-icon name='home-alt-2' type='solid' color='#edeade'></box-icon>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
-                    <div class="icon link-1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
-                </a>
-                <a href="">
-                    <div class="icon link-1">
-                        <i class="fa fa-download" aria-hidden="true"></i></div>
-                </a>
+    <div class="icons magnify">
+        <a href="index.php">
+            <div class="icon-link-1"><h1>Home</h1>
+                <box-icon name='home-alt-2' type='solid' color='#edeade'></box-icon>
+            </div>
+        </a>
+        <a href="httpsne-tap-submit">
+            <div class="icon link-1"><i class="fa fa-" aria-hidden="true"></i></div>
+        </a>
+        <a href="">
+            <div class="icon link-1">
+                <i class="fa fa-download" aria-hidden="true"></i></div>
+        </a>
 </header>
 <?php
 
@@ -36,7 +36,7 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$query = $db->prepare('SELECT `id`, `name`, `type`,`about`, `image`, `verse`, `date` FROM `artist-works` WHERE `id`=' .$poemId);
+$query = $db->prepare('SELECT `id`, `name`, `type`,`about`, `image`, `verse`, `date` FROM `artist-works` WHERE `id`=' . $poemId);
 $query->execute();
 
 $poem = $query->fetch();
@@ -45,13 +45,12 @@ $poem = $query->fetch();
 echo '<div class="contain-1">';
 
 
-
-    echo '<div class="container-1">' .
-        '<div class="image-description-container-1">' .
-        '<img class="images-1" src="' . $poem['image'] . '">' .
-        '<div class="description-1">' . '<div class="name">' . $poem['name'] . '</div>' .
-        '<div class="about">' . $poem['about'] . '<br>' . '</div>' .
-        '<div class="date">' . $poem['date'] . '<br><hr>' . '</div>' .
-        '<div class="verse">' . $poem['verse'] . '<br><hr>' . '</div>' .
-        '</div>' . '</div>' . '</div>';
+echo '<div class="container-1">' .
+    '<div class="image-description-container-1">' .
+    '<img class="images-1" src="' . $poem['image'] . '">' .
+    '<div class="description-1">' . '<div class="name">' . $poem['name'] . '</div>' .
+    '<div class="about">' . $poem['about'] . '<br>' . '</div>' .
+    '<div class="date">' . $poem['date'] . '<br><hr>' . '</div>' .
+    '<div class="verse">' . $poem['verse'] . '<br><hr>' . '</div>' .
+    '</div>' . '</div>' . '</div>';
 
