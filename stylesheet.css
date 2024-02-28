@@ -1,9 +1,14 @@
 .body{
-    background-image: url("https://images.unsplash.com/photo-1606799239751-85a51516687a?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url(https://images.unsplash.com/photo-1640543600979-0078814565a9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-family: "Oswald", sans-serif;
 }
-
-.filter{
-
+.text{
+    display:flex;
+    color:white;
+    font-family: "Oswald", sans-serif;
+    font-size:4rem;
+    margin-left:75rem;
+    margin-top:-30rem;
 }
 .icon-link-1{
     text-decoration: none;
@@ -39,6 +44,7 @@
 }
 a {
     text-decoration:none;
+    color:#EDEADE;
 }
 .filters{
     border-radius:10px;
@@ -46,6 +52,17 @@ a {
     text-decoration: none;
     font-size:1.5rem;
 }
+
+img{
+    display:flex;
+    flex-wrap:wrap;
+    height:200px;
+    width:325px;
+    border-radius:10px;
+    text-decoration: none;
+    gap:1rem;
+}
+
 .images {
     display:flex;
 flex-wrap:wrap;
@@ -101,12 +118,21 @@ width:325px;
     text-decoration: none;
 }
 .image-description-container {
-width:15rem;
     display:flex;
     flex-wrap: wrap;
     text-decoration: none;
 }
-
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 2rem;
+    width: 70%;
+}
 .image-description-container-1 {
     display:flex;
     flex-wrap: wrap;
@@ -122,6 +148,13 @@ width:15rem;
     width:15rem;
     margin:2rem;
 }
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    margin:1rem;
+}
 
 .container-1 {
     display: flex;
@@ -131,6 +164,10 @@ width:15rem;
     text-decoration: none;
     width:15rem;
     margin:2rem;
+}
+.h1 {
+    text-align:center;
+    font-size:2rem;
 }
 .contain {
     display: flex;
@@ -147,13 +184,33 @@ width:15rem;
     text-decoration: none;
 }
 
+.button{
+    padding: 0.5rem;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 4px;
+}
+.bin{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:2.75rem;
+    justify-content: right;
+    margin-right:-40rem;
+    margin-top: -10rem;
 
+}
+.form{
+    margin-bottom: 0.5rem;
+}
 
 @media screen and (max-width: 1000px) {
     .container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+
 }
     .header {
         display: flex;
@@ -164,6 +221,14 @@ width:15rem;
         text-decoration:none;
         gap:5rem;
         margin:2rem;
+    }
+    .text{
+        display:table-column;
+        color:white;
+        font-family: "Oswald", sans-serif;
+        font-size:4rem;
+        margin-left:75rem;
+        margin-top:-30rem;
     }
 }
 
