@@ -22,32 +22,16 @@
     <div class="filters">Music</div>
     <div class="filters">Other</div>
 </header>
+
 <?php
-
-$poemId = $_GET['id'];
-
 
 $db = new PDO('mysql:host=db; dbname=collector-app', 'root', 'password');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$query = $db->prepare('SELECT `id`, `name`, `type`,`about`, `image`, `verse`, `date` FROM `artist-works` WHERE `id`=' . $poemId);
+$poemId = $_GET['id'];
+$query=$db->prepare('DELETE FROM `artist-works` (`name`,`type`,`image`, `about`, `verse`, `date` WHERE `id`=' . $poemId);
+
 $query->execute();
-
-$poem = $query->fetch();
-//id is $poemId
-
-echo '<div class="contain-1">';
-
-
-echo '<div class="container-1">'.
-    '<div class="image-description-container-1">' .
-    '<img class="images-1" src="' . $poem['image'] . '">' .
-    '<div class="description-1">' . '<div class="name">' . $poem['name'] . '</div>' .
-    '<div class="about">' . $poem['about'] . '<br>' . '</div>' .
-    '<div class="date">' . $poem['date'] . '<br><hr>' . '</div>' .
-    '<div class="verse">' . $poem['verse'] . '<br><hr>' . '</div>' .
-    '</div>' .'<div>'.'</div>' .'</div>'.'<a href=delete.php?id='.'<i class="fa-solid fa-trash bin"></i>'.'</a>' .'</div>';
 
 
