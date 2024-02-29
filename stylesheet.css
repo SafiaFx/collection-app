@@ -1,0 +1,247 @@
+.body{
+    background-image: url(https://images.unsplash.com/photo-1640543600979-0078814565a9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    font-family: "Oswald", sans-serif;
+}
+.text{
+    display:flex;
+    color:white;
+    font-family: "Oswald", sans-serif;
+    font-size:4rem;
+    margin-left:75rem;
+    margin-top:-30rem;
+}
+.icon-link-1{
+    text-decoration: none;
+    color:white;
+}
+.heading{
+    font-size:5rem;
+    text-align:center;
+    color:	#EDEADE;
+    padding:1rem;
+    margin:1rem;
+}
+.header {
+     display: flex;
+     color:	#EDEADE;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     font-size:1rem;
+     text-decoration:none;
+     gap:10rem;
+     margin:5rem;
+ }
+
+.header-1 {
+    display: flex;
+    color:	#EDEADE;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size:1rem;
+    text-decoration:none;
+    gap:10rem;
+    margin:5rem;
+}
+a {
+    text-decoration:none;
+    color:#EDEADE;
+}
+.filters{
+    border-radius:10px;
+    padding:1rem;
+    text-decoration: none;
+    font-size:1.5rem;
+}
+
+img{
+    display:flex;
+    flex-wrap:wrap;
+    height:200px;
+    width:325px;
+    border-radius:10px;
+    text-decoration: none;
+    gap:1rem;
+}
+
+.images {
+    display:flex;
+flex-wrap:wrap;
+height:200px;
+width:325px;
+    border-radius:10px;
+    text-decoration: none;
+    gap:1rem;
+}
+
+.images-1 {
+    display:flex;
+    flex-wrap:wrap;
+    height:30rem;
+    width:45rem;
+    border-radius:10px;
+    text-decoration: none;
+    gap:1rem;
+    margin:1rem;
+}
+.name{
+    color:grey;
+    font-size:30px;
+    text-decoration: none;
+}
+.type{
+    color: darkslategrey;
+    font-size:20px;
+    text-decoration: none;
+}
+.about{
+    color: darkolivegreen;
+    font-size:20px;
+    text-decoration: none;
+}
+.date{
+    color: lightgrey;
+    font-size:20px;
+    font-style:italic;
+    text-decoration: none;
+}
+
+.verse{
+    font-size:larger;
+    font-style:italic;
+    text-decoration: none;
+    color:lightgrey;
+    text-shadow: black;
+}
+.description {
+    width:15rem;
+    margin:1rem;
+    text-decoration: none;
+}
+.image-description-container {
+    display:flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: lightgrey;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 2rem;
+    width: 70%;
+}
+.image-description-container-1 {
+    display:flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin:1rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:3rem;
+    text-decoration: none;
+    width:15rem;
+    margin:2rem;
+}
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    margin:1rem;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:3rem;
+    text-decoration: none;
+    width:15rem;
+    margin:2rem;
+}
+.h1 {
+    text-align:center;
+    font-size:2rem;
+}
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:3rem;
+    text-decoration: none;
+}
+.contain-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1rem;
+    text-decoration: none;
+}
+
+.button{
+    padding: 0.5rem;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 4px;
+}
+.bin{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:2.75rem;
+    justify-content: right;
+    margin-right:-40rem;
+    margin-top: -10rem;
+
+}
+.form{
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+}
+    .header {
+        display: flex;
+        color:#EDEADE;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size:1.5rem;
+        text-decoration:none;
+        gap:5rem;
+        margin:2rem;
+    }
+    .text{
+        display:table-column;
+        color:white;
+        font-family: "Oswald", sans-serif;
+        font-size:4rem;
+        margin-left:75rem;
+        margin-top:-30rem;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .header {
+        display: flex;
+        color:#EDEADE;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size:1.5rem;
+        text-decoration:none;
+        gap:1rem;
+        margin:1rem;
+    }
+}
